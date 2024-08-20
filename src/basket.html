@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Корзина</title>
+        //= template/head.html
+    </head>
+    <body class="body page-basket">
+        //= template/header.html
+
+        <main class="main">
+            <section class="main__section section section-title">
+                <div class="section-title__wrap js-margin-right">
+                    <h1 class="ff-gr">Корзина</h1>
+                </div>
+            </section>
+            <section class="main__section section section-benefits">
+                <ul class="container">
+                    <li class="section-benefits__item">
+                        <span>
+                            <img src="./img/icons/i-time.svg" alt="">
+                        </span>
+                        <p class="ff-gr">10 лет поставляем запчасти и комплектующие</p>
+                    </li>
+                    <li class="section-benefits__item">
+                        <span>
+                            <img src="./img/icons/i-geography.svg" alt="">
+                        </span>
+                        <p class="ff-gr">Широкая география доставки — Россия и СНГ</p>
+                    </li>
+                    <li class="section-benefits__item">
+                        <span>
+                            <img src="./img/icons/i-payment.svg" alt="">
+                        </span>
+                        <p class="ff-gr">Оплату доставки до терминала берем на себя</p>
+                    </li>
+                    <li class="section-benefits__item">
+                        <span>
+                            <img src="./img/icons/i-deal.svg" alt="">
+                        </span>
+                        <p class="ff-gr">Безналичный расчет — гарантия прозрачности сделки</p>
+                    </li>
+                </ul>
+            </section>
+
+            <button id="form-add-basket-open"></button>
+            
+            <div class="form form__adaptive">
+                <div class="form__adaptive-top">
+                    <h5>Быстрый заказ</h5>
+                    <button type="button" class="form__adaptive-close" id="form-close">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.70711 2.29289C3.31658 1.90237 2.68342 1.90237 2.29289 2.29289C1.90237 2.68342 1.90237 3.31658 2.29289 3.70711L6.58579 8L2.29289 12.2929C1.90237 12.6834 1.90237 13.3166 2.29289 13.7071C2.68342 14.0976 3.31658 14.0976 3.70711 13.7071L8 9.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L9.41421 8L13.7071 3.70711C14.0976 3.31658 14.0976 2.68342 13.7071 2.29289C13.3166 1.90237 12.6834 1.90237 12.2929 2.29289L8 6.58579L3.70711 2.29289Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <form action="" id="form-fast-order">
+                    <div class="form__adaptive-product">
+                        <img src="./img/catalog-list/item-1.png" alt="">
+                        <div>
+                            <span>Forcechuck</span>
+                            <p>Токарный патрон с независимым перемещен Токарный патрон с независимым перемещен</p>
+                        </div>
+                    </div>
+                    <span class="form__adaptive-text">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время для уточнения деталей заказа</span>
+                    <fieldset class="form__fieldset">
+                        <div class="form__fieldset-wrap">
+                            <label class="form__label" for="name">Ваше имя</label>
+                            <input class="form__input" type="text" name="name">
+                            <span class="form__error">Заполните поле</span>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <div class="form__fieldset-wrap">
+                            <label class="form__label" for="tel">Телефон</label>
+                            <input class="form__input" type="text" name="tel" placeholder="+7">
+                            <span class="form__error"></span>
+                        </div>
+                    </fieldset>
+        
+                    <button class="form__btn" type="submit">
+                        <span>Отправить заявку</span>
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.79274 2.70711C7.40222 2.31658 7.40222 1.68342 7.79274 1.29289C8.18327 0.902369 8.81643 0.902369 9.20696 1.29289L15.207 7.29289L15.9141 8L15.207 8.70711L9.20696 14.7071C8.81643 15.0976 8.18327 15.0976 7.79274 14.7071C7.40222 14.3166 7.40222 13.6834 7.79274 13.2929L12.0856 9L0.999849 9C0.447565 9 -0.000150681 8.55228 -0.000150681 8C-0.000150681 7.44772 0.447564 7 0.999849 7L12.0856 7L7.79274 2.70711Z"/>
+                        </svg>
+                    </button>
+        
+                    <p class="form__agreement">
+                        Нажимая кнопку, вы даете согласие на обработку персональных данных, в соответствии с <a>Правилами обработки информации</a>
+                    </p>
+                </form>
+                <div class="form__result">
+                    <img src="./img/icons/i-check.svg" alt="">
+                    <h5 class="ff-gr">сообщение отправлено</h5>
+                    <p>Наш менеджер свяжется с вами в ближайшее время</p>
+                    <button type="button">
+                        <span>Готово</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        //= template/footer.html
+        
+    </body>
+</html>

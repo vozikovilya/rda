@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Контакты</title>
+        //= template/head.html
+    </head>
+    <body class="body page-contacts">
+        //= template/header.html
+
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Контакты</a>
+                </div>
+            </div>
+            <section class="main__section section section-title">
+                <div class="section-title__wrap js-margin-right">
+                    <h1 class="ff-gr">контакты</h1>
+                </div>
+            </section>
+            <section class="main__section section section-content">
+                <div class="section-content__map">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/volokolamskoye_shosse_142/Z04YdQBhSEIEQFtvfXRzeHlqZw==/?ll=37.371173%2C55.829593&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Волоколамское шоссе, 142 на карте Москвы, ближайшее метро Волоколамская — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBeABxXC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+
+                <div class="section-content__info js-margin-right">
+                    <div class="section-content__info-connect">
+                        <div class="section-content__info-block">
+                            <span>Адрес</span>
+                            <address>Москва, Волоколамское шоссе, 142</address>
+                        </div>
+                        <div class="section-content__info-block">
+                            <span>Электроннная почта</span>
+                            <a href="mailto:rdagroup@bk.ru">rdagroup@bk.ru</a>
+                            <a href="mailto:rda_group@mail.ru">rda_group@mail.ru</a>
+                        </div>
+                        <div class="section-content__info-block">
+                            <span>Горячая линия (бесплатно по России)</span>
+                            <a href="tel:8-800-302-3534">8-800-302-3534</a>
+                        </div>
+                        <div class="section-content__info-block">
+                            <a href="tel:+7 (499) 641-33-08">+7 (499) 641-33-08,</a>
+                            <a href="tel:+7 (499) 641-33-09">+7 (499) 641-33-09,</a>
+                            <a href="tel:+7 (499) 641-33-13">+7 (499) 641-33-13</a>
+                            <span class="time">Пн — Пт / 09:00 — 18:00</span>
+                        </div>
+                    </div>
+                    <div class="section-content__info-req">
+                        <h4 class="ff-gr">Реквизиты</h4>
+                        <ul>
+                            <li>
+                                <span>Наименование</span>
+                                <p>ООО «РДА ГРУПП»</p>
+                            </li>
+                            <li>
+                                <span>ИНН/КПП</span>
+                                <p>7721747049/773301001</p>
+                            </li>
+                            <li>
+                                <span>ОГРН</span>
+                                <p>1127746013163</p>
+                            </li>
+                            <li>
+                                <span>Юридический адрес:</span>
+                                <p>125464, Москва, Волоколамское ш, д. 142, эт. 3, пом II, К 20, оф 308</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__section section section-form">
+                <div class="container">
+                    <div class="section-form__title">
+                        <h3 class="ff-gr">начнем сотрудничество</h3>
+                        <span>Оставьте заявку и наш менеджер свяжется с вами в&nbsp;ближайшее&nbsp;время</span>
+                    </div>
+                    <div class="section-form__form form">
+                        <form action="" id="form-contacts" novalidate>
+                            <fieldset class="form__fieldset">
+                                <div class="form__fieldset-wrap">
+                                    <label class="form__label" for="name">Ваше имя</label>
+                                    <input required class="form__input" type="text" name="name">
+                                    <span class="form__error">Заполните поле</span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset form__fieldset-column2">
+                                <div class="form__fieldset-wrap">
+                                    <label class="form__label" for="phone">Телефон</label>
+                                    <input required class="form__input" type="text" name="phone" placeholder="+7">
+                                    <span class="form__error"></span>
+                                </div>
+                                <div class="form__fieldset-wrap">
+                                    <label class="form__label" for="email">Адрес эл. почты</label>
+                                    <input required class="form__input" type="text" name="email">
+                                    <span class="form__error"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <div class="form__fieldset-wrap">
+                                    <label class="form__label" for="messege">Сообщение</label>
+                                    <textarea required class="form__textarea" name="messege" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                                    <span class="form__error"></span>
+                                </div>
+                            </fieldset>
+
+                            <button class="form__btn" type="submit">
+                                <span>Отправить заявку</span>
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.79274 2.70711C7.40222 2.31658 7.40222 1.68342 7.79274 1.29289C8.18327 0.902369 8.81643 0.902369 9.20696 1.29289L15.207 7.29289L15.9141 8L15.207 8.70711L9.20696 14.7071C8.81643 15.0976 8.18327 15.0976 7.79274 14.7071C7.40222 14.3166 7.40222 13.6834 7.79274 13.2929L12.0856 9L0.999849 9C0.447565 9 -0.000150681 8.55228 -0.000150681 8C-0.000150681 7.44772 0.447564 7 0.999849 7L12.0856 7L7.79274 2.70711Z"/>
+                                </svg>
+                            </button>
+
+                            <p class="form__agreement">
+                                Нажимая кнопку, вы даете согласие на обработку персональных данных, в соответствии с <a href="">Правилами обработки информации</a>
+                            </p>
+                        </form>
+                        <div class="form__result">
+                            <img src="./img/icons/i-check.svg" alt="">
+                            <h5 class="ff-gr">сообщение отправлено</h5>
+                            <p>Наш менеджер свяжется с вами в ближайшее время</p>
+                            <button type="button">
+                                <span>Готово</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        //= template/footer.html
+        
+    </body>
+</html>
